@@ -178,7 +178,7 @@ function Hero() {
         <h1 className="mt-4 font-display text-[2.35rem] leading-[1.05] sm:text-6xl">
           Rosiane Siqueira
         </h1>
-        <p className="eyebrow mt-3">Enfermeira Esteta</p>
+        <p className="eyebrow mt-3">Especialista em Criolipólise</p>
         <div className="rule-gold mt-4 w-40" />
         <p className="mt-4 max-w-lg text-[1.02rem] leading-relaxed text-muted-foreground">
           Realce sua beleza natural com protocolos exclusivos de estética avançada e capilar. Agende sua avaliação personalizada e sinta a diferença.
@@ -435,6 +435,17 @@ function About() {
                 Oferecendo um atendimento personalizado em ambiente
                 clínico, onde cada protocolo é desenhado exclusivamente para você.
                 Minha missão é cuidar de você, promovendo bem-estar de dentro para fora.
+              </p>
+              <p>
+                Sou especialista em criolipólise e protocolos de contorno corporal,
+                além de tricologia capilar e estética regenerativa. Cada atendimento
+                começa por uma avaliação detalhada, para que o plano de tratamento
+                respeite o seu tempo, o seu corpo e os seus objetivos.
+              </p>
+              <p>
+                Ao longo dos anos, acompanhei centenas de mulheres em suas jornadas de
+                autoestima — e é essa relação de confiança, técnica e acolhimento que
+                move o meu trabalho todos os dias.
               </p>
             </div>
             <p className="mt-4 font-script text-3xl text-gold-gradient">
