@@ -27,8 +27,6 @@ export function WhatsAppButton({
   return (
     <a
       href={WHATSAPP_URL}
-      target="_blank"
-      rel="noreferrer"
       className={cn(
         "inline-flex max-w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-whatsapp font-semibold uppercase tracking-[0.12em] text-whatsapp-foreground shadow-whatsapp transition-all duration-300 hover:-translate-y-0.5 hover:bg-whatsapp-dark sm:gap-2.5 sm:tracking-[0.18em]",
         size === "xl"
