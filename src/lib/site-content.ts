@@ -1,4 +1,4 @@
-export const WHATSAPP_URL = "https://wa.me/5527981046436?text=Olá%20Rosiane!%20Gostaria%20de%20agendar%20uma%20avaliação.";
+export const WHATSAPP_URL = "#";
 export const INSTAGRAM_URL = "https://instagram.com/rosianesiqueira";
 
 export const services = [

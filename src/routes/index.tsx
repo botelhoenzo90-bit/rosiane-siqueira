@@ -129,8 +129,6 @@ function Home() {
       <Footer />
       <a
         href={WHATSAPP_URL}
-        target="_blank"
-        rel="noreferrer"
         aria-label="Agendar pelo WhatsApp"
         className="fixed bottom-5 right-5 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-whatsapp text-whatsapp-foreground shadow-whatsapp transition-transform hover:scale-110 sm:h-[4.5rem] sm:w-[4.5rem]"
       >

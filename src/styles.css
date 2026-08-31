@@ -22,3 +22,22 @@ section:nth-of-type(odd){background-color:#FFFFFF}section:nth-of-type(even){back
 @utility font-display{font-family:var(--font-display)}@utility font-script{font-family:var(--font-script)}@utility text-gold-gradient{background-image:var(--gradient-gold);background-clip:text;-webkit-background-clip:text;color:transparent}@utility bg-gold-gradient{background-image:var(--gradient-gold)}@utility bg-veil{background-image:var(--gradient-veil)}@utility shadow-silk{box-shadow:var(--shadow-silk)}@utility shadow-lift{box-shadow:var(--shadow-lift)}@utility shadow-whatsapp{box-shadow:var(--shadow-whatsapp)}@utility rule-gold{height:1px;background-image:linear-gradient(to right,transparent,var(--gold),transparent)}@utility eyebrow{font-size:.72rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-deep)}@utility reveal{opacity:0;transform:translateY(24px);animation:reveal-up .9s cubic-bezier(.16,1,.3,1) forwards}@keyframes reveal-up{to{opacity:1;transform:translateY(0)}}@keyframes float-slow{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}@utility float-slow{animation:float-slow 7s ease-in-out infinite}@keyframes marquee-x{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}.marquee-track{animation-name:marquee-x;animation-timing-function:linear;animation-iteration-count:infinite;will-change:transform}.group:hover .marquee-track{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}@utility card-lux{position:relative;border-radius:1.25rem;border:1px solid color-mix(in oklab,var(--gold) 28%,transparent);background-color:var(--card);box-shadow:var(--shadow-silk);transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s cubic-bezier(.16,1,.3,1),border-color .5s ease;&:hover{transform:translateY(-6px);border-color:color-mix(in oklab,var(--gold) 62%,transparent);box-shadow:var(--shadow-lift)}}@utility gold-cap{&::before{content:"";position:absolute;inset:0 auto auto 0;height:2px;width:100%;border-radius:999px;background-image:var(--gradient-gold);opacity:.55}}@utility bg-marble{background-image:linear-gradient(to bottom,color-mix(in oklab,var(--background) 82%,transparent),color-mix(in oklab,var(--background) 70%,transparent)),var(--marble-url);background-size:cover;background-position:center}@utility bg-marble-soft{background-color:#FFFFFF}@utility divider-ornament{display:flex;align-items:center;justify-content:center;gap:.75rem;&::before,&::after{content:"";height:1px;width:3.5rem;background-image:linear-gradient(to right,transparent,var(--gold))}&::after{background-image:linear-gradient(to left,transparent,var(--gold))}}@utility gold-frame{position:relative;&::after{content:"";position:absolute;inset:.55rem;border:1px solid color-mix(in oklab,var(--gold) 45%,transparent);border-radius:inherit;pointer-events:none}}
 #topo .mx-auto.flex{padding-bottom:2rem!important}
 .whatsapp-number,.phone-number{display:none!important}
+/* Paleta por seção */
+:root{--rose-band:#F4DEE6;--rose-band-deep:#E7C3D2}
+#servicos,#depoimentos{background:var(--rose-band)!important;color:#17213A}
+#servicos h2,#servicos h3,#servicos .text-foreground,#servicos .text-secondary-foreground,#depoimentos h2,#depoimentos .text-foreground,#depoimentos .text-secondary-foreground{color:#17213A!important}
+#servicos .text-muted-foreground,#depoimentos .text-muted-foreground{color:#5B4450!important}
+#servicos .card-lux,#depoimentos .card-lux{background:#FFFFFF;color:#17213A}
+#diferenciais,#duvidas{background:#0E254A!important;color:#FFFFFF}
+#diferenciais h2,#diferenciais h3,#diferenciais .text-foreground,#diferenciais .text-secondary-foreground,#duvidas h2,#duvidas h3,#duvidas .text-foreground{color:#FFFFFF!important}
+#diferenciais .text-muted-foreground,#duvidas .text-muted-foreground{color:rgba(255,255,255,.78)!important}
+#diferenciais .eyebrow,#duvidas .eyebrow{color:#D7B18F!important}
+#duvidas button{color:#FFFFFF!important}
+#duvidas [data-radix-collection-item],#duvidas [role="region"]{background:transparent}
+#duvidas .border-b{border-color:rgba(255,255,255,.18)!important}
+#diferenciais .card-lux{background:rgba(255,255,255,.06);border-color:rgba(215,177,143,.45)}
+/* Faixa de confiança em bronze */
+.bg-primary.sm\:hidden{background:var(--gradient-gold)!important}
+section.border-y.border-gold\/30{background:var(--gradient-gold)!important;border-color:rgba(255,255,255,.25)!important}
+section.border-y.border-gold\/30 p{color:#FFFFFF!important}
+section.border-y.border-gold\/30 svg{color:#FFFFFF!important}
