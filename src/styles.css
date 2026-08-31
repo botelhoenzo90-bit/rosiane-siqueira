@@ -23,7 +23,7 @@ section:nth-of-type(odd){background-color:#FFFFFF}section:nth-of-type(even){back
 #topo .mx-auto.flex{padding-bottom:2rem!important}
 .whatsapp-number,.phone-number{display:none!important}
 /* Paleta por seção */
-:root{--rose-band:#F4DEE6;--rose-band-deep:#E7C3D2}
+:root{--rose-band:#FBD9E6;--rose-band-deep:#F3BFD4}
 #servicos,#depoimentos{background:var(--rose-band)!important;color:#17213A}
 #servicos h2,#servicos h3,#servicos .text-foreground,#servicos .text-secondary-foreground,#depoimentos h2,#depoimentos .text-foreground,#depoimentos .text-secondary-foreground{color:#17213A!important}
 #servicos .text-muted-foreground,#depoimentos .text-muted-foreground{color:#5B4450!important}
@@ -41,3 +41,5 @@ section:nth-of-type(odd){background-color:#FFFFFF}section:nth-of-type(even){back
 section.border-y.border-gold\/30{background:var(--gradient-gold)!important;border-color:rgba(255,255,255,.25)!important}
 section.border-y.border-gold\/30 p{color:#FFFFFF!important}
 section.border-y.border-gold\/30 svg{color:#FFFFFF!important}
+
+#duvidas{clip-path:inset(0 -100vmax);box-shadow:0 0 0 100vmax #0E254A}

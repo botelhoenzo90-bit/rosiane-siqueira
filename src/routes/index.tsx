@@ -56,7 +56,7 @@ const serviceImages: Record<string, string> = {
 
 const title = "Rosiane Siqueira | Enfermeira Esteta";
 const description =
-  "Estética avançada e personalizada com Rosiane Siqueira. Tricologia capilar, estética regenerativa, harmonização, PEIM e cuidados home care especializados.";
+  "Estética avançada e personalizada com Rosiane Siqueira: criolipólise, massagens, limpeza de pele, depilação e cuidados estéticos sob medida.";
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => {
@@ -171,7 +171,7 @@ function Hero() {
         <p className="eyebrow mt-3">Especialista em Criolipólise</p>
         <div className="rule-gold mt-4 w-40" />
         <p className="mt-4 max-w-lg text-[1.02rem] leading-relaxed text-muted-foreground">
-          Realce sua beleza natural com protocolos exclusivos de estética avançada e capilar. Agende sua avaliação personalizada e sinta a diferença.
+          Realce sua beleza natural com protocolos exclusivos de criolipólise, massagens e cuidados faciais. Agende sua avaliação personalizada e sinta a diferença.
         </p>
         <div className="mt-7 w-full max-w-md overflow-hidden rounded-3xl shadow-lift">
           <img
@@ -210,7 +210,7 @@ function Trust() {
   const items = [
     { icon: HeartHandshake, short: "Cuidado Humanizado" },
     { icon: ShieldCheck, short: "Rigor Clínico" },
-    { icon: Leaf, short: "Estética Regenerativa" },
+    { icon: Leaf, short: "Estética Avançada" },
   ];
   return (
     <section className="border-y border-gold/30">
@@ -283,8 +283,8 @@ function Services() {
       <div className="mx-auto max-w-6xl px-5">
         <SectionTitle
           eyebrow="Nossos serviços"
-          title="Estética e Tricologia"
-          subtitle="Tratamentos clínicos personalizados para realçar sua harmonia facial, corporal e saúde capilar."
+          title="Estética e Bem-estar"
+          subtitle="Tratamentos personalizados de estética corporal e facial, massagens e cuidados para o seu bem-estar."
         />
       </div>
       <Reveal delay={100} className="mt-8 block">
@@ -390,7 +390,7 @@ function About() {
         <SectionTitle
           eyebrow="Quem é a Rosiane"
           title="Paixão pela estética e cuidado"
-          subtitle="Enfermeira esteta dedicada a transformar vidas através da harmonização e saúde capilar."
+          subtitle="Profissional dedicada a cuidar da sua autoestima com estética corporal, facial e muito acolhimento."
         />
 
         <div className="mt-9 grid items-center gap-9 lg:grid-cols-[0.8fr_1.2fr]">
@@ -417,8 +417,8 @@ function About() {
               </p>
               <p>
                 Minha trajetória é marcada pelo compromisso com a excelência técnica
-                e o cuidado humanizado. Especialista em tricologia capilar e estética
-                regenerativa, busco sempre as soluções mais modernas e seguras para
+                e o cuidado humanizado. Especialista em criolipólise e cuidados
+                corporais e faciais, busco sempre as soluções mais modernas e seguras para
                 entregar resultados que elevam a autoestima.
               </p>
               <p>
@@ -428,7 +428,7 @@ function About() {
               </p>
               <p>
                 Sou especialista em criolipólise e protocolos de contorno corporal,
-                além de tricologia capilar e estética regenerativa. Cada atendimento
+                além de limpeza de pele, massagens e depilação. Cada atendimento
                 começa por uma avaliação detalhada, para que o plano de tratamento
                 respeite o seu tempo, o seu corpo e os seus objetivos.
               </p>
