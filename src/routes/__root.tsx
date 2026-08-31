@@ -14,7 +14,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4"><div className="max-w-md text-center"><h1 className="text-7xl font-bold text-foreground">404</h1><h2 className="mt-4 text-xl font-semibold text-foreground">Página não encontrada</h2><p className="mt-2 text-sm text-muted-foreground">A página que você procura não existe ou foi movida.</p><div className="mt-6"><Link to="/" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Voltar ao início</Link></div></div></div>
+    <div className="flex min-h-screen items-center justify-center bg-background px-4"><div className="max-w-md text-center"><h1 className="text-7xl font-bold text-foreground">404</h1><h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2><p className="mt-2 text-sm text-muted-foreground">The page you're looking for doesn't exist or has been moved.</p><div className="mt-6"><Link to="/" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Go home</Link></div></div></div>
   );
 }
 
@@ -23,7 +23,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   const router = useRouter();
   useEffect(() => { reportLovableError(error, { boundary: "tanstack_root_error_component" }); }, [error]);
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4"><div className="max-w-md text-center"><h1 className="text-xl font-semibold tracking-tight text-foreground">Não foi possível carregar a página</h1><p className="mt-2 text-sm text-muted-foreground">Ocorreu um problema. Tente atualizar a página ou voltar ao início.</p><div className="mt-6 flex flex-wrap justify-center gap-2"><button onClick={() => { router.invalidate(); reset(); }} className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Tentar novamente</button><a href="/" className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent">Voltar ao início</a></div></div></div>
+    <div className="flex min-h-screen items-center justify-center bg-background px-4"><div className="max-w-md text-center"><h1 className="text-xl font-semibold tracking-tight text-foreground">This page didn't load</h1><p className="mt-2 text-sm text-muted-foreground">Something went wrong on our end. You can try refreshing or head back home.</p><div className="mt-6 flex flex-wrap justify-center gap-2"><button onClick={() => { router.invalidate(); reset(); }} className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">Try again</button><a href="/" className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent">Go home</a></div></div></div>
   );
 }
 
@@ -57,29 +57,7 @@ function RootShell({ children }: { children: ReactNode }) {
   return <html lang="pt-BR"><head><HeadContent /></head><body>{children}<Scripts /></body></html>;
 }
 
-function replaceLegacyBranding() {
-  const replace = (value: string) => value.replace(/Chris\s*Vitorino/gi, "Rosiane Siqueira").replace(/Chris/gi, "Rosiane Siqueira");
-  const walk = (node: Node) => {
-    if (node.nodeType === Node.TEXT_NODE && node.nodeValue) node.nodeValue = replace(node.nodeValue);
-    else if (node.nodeType === Node.ELEMENT_NODE) {
-      const el = node as HTMLElement;
-      for (const attr of ["alt", "aria-label", "title"]) {
-        const value = el.getAttribute(attr);
-        if (value?.match(/Chris/i)) el.setAttribute(attr, replace(value));
-      }
-      node.childNodes.forEach(walk);
-    }
-  };
-  walk(document.body);
-}
-
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
-  useEffect(() => {
-    replaceLegacyBranding();
-    const observer = new MutationObserver(() => replaceLegacyBranding());
-    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
-    return () => observer.disconnect();
-  }, []);
   return <QueryClientProvider client={queryClient}><Outlet /></QueryClientProvider>;
 }
