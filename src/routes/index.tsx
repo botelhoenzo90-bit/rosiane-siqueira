@@ -55,9 +55,9 @@ const serviceImages: Record<string, string> = {
   "home-care": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2000&auto=format&fit=crop",
 };
 
-const title = "Chris Vitorino | Enfermeira Esteta";
+const title = "Rosiane Siqueira | Enfermeira Esteta";
 const description =
-  "Estética avançada e personalizada com Chris Vitorino. Tricologia capilar, estética regenerativa, harmonização, PEIM e cuidados home care especializados.";
+  "Estética avançada e personalizada com Rosiane Siqueira. Tricologia capilar, estética regenerativa, harmonização, PEIM e cuidados home care especializados.";
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => {
@@ -80,7 +80,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "HealthAndBeautyBusiness",
-          name: "Chris Vitorino — Enfermeira Esteta",
+          name: "Rosiane Siqueira — Enfermeira Esteta",
           description,
           image: retrato.url,
           address: {
@@ -170,13 +170,13 @@ function Hero() {
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-5 pb-14 pt-0 text-center sm:pb-20">
         <img
           src={logo.url}
-          alt="Logomarca Chris Vitorino"
+          alt="Logomarca Rosiane Siqueira"
           width={300}
           height={300}
           className="h-28 w-28 object-contain sm:h-40 sm:w-40"
         />
         <h1 className="mt-4 font-display text-[2.35rem] leading-[1.05] sm:text-6xl">
-          Chris Vitorino
+          Rosiane Siqueira
         </h1>
         <p className="eyebrow mt-3">Enfermeira Esteta</p>
         <div className="rule-gold mt-4 w-40" />
@@ -398,7 +398,7 @@ function About() {
     <section id="sobre" className="bg-sand py-14 sm:py-16">
       <div className="mx-auto max-w-6xl px-5">
         <SectionTitle
-          eyebrow="Quem é a Chris"
+          eyebrow="Quem é a Rosiane"
           title="Paixão pela estética e cuidado"
           subtitle="Enfermeira esteta dedicada a transformar vidas através da harmonização e saúde capilar."
         />
@@ -408,7 +408,7 @@ function About() {
             <div className="absolute -inset-2.5 rounded-3xl border border-gold/40" />
             <img
               src={retrato.url}
-              alt="Chris Vitorino, Enfermeira Esteta"
+              alt="Rosiane Siqueira, Enfermeira Esteta"
               loading="lazy"
               width={905}
               height={1358}
@@ -420,7 +420,7 @@ function About() {
           <Reveal delay={100} className="text-center lg:text-left">
             <div className="space-y-3 text-[0.95rem] leading-relaxed text-muted-foreground">
               <p>
-                Sou Chris Vitorino, enfermeira esteta apaixonada pela arte de realçar
+                Sou Rosiane Siqueira, enfermeira esteta apaixonada pela arte de realçar
                 a beleza natural. Acredito que a estética avançada deve ser sinônimo
                 de saúde, harmonia e equilíbrio, respeitando a individualidade de cada
                 paciente.
@@ -438,7 +438,7 @@ function About() {
               </p>
             </div>
             <p className="mt-4 font-script text-3xl text-gold-gradient">
-              Chris Vitorino
+              Rosiane Siqueira
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -456,7 +456,7 @@ function About() {
             </div>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
-              <WhatsAppButton size="lg">Falar com a Chris</WhatsAppButton>
+              <WhatsAppButton size="lg">Falar com a Rosiane</WhatsAppButton>
               <a
                 href={INSTAGRAM_URL}
                 target="_blank"
@@ -698,7 +698,7 @@ function Location() {
                   />
                   <div className="min-w-0 text-left">
                     <p className="font-display text-xl leading-tight">
-                      Chris Vitorino Estética Avançada
+                      Rosiane Siqueira Estética Avançada
                     </p>
                     <p className="text-[0.66rem] uppercase tracking-[0.22em] text-gold-deep">
                       Vitória · ES
@@ -785,7 +785,7 @@ function Faq() {
         <WhatsAppButton size="lg">Tirar minha dúvida</WhatsAppButton>
         <img
           src={logo.url}
-          alt="Logomarca Chris Vitorino"
+          alt="Logomarca Rosiane Siqueira"
           loading="lazy"
           width={160}
           height={160}
@@ -801,7 +801,7 @@ function Footer() {
     <footer className="relative border-t border-gold/25 bg-sand">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-brand-band" />
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 py-8 text-center">
-        <p className="font-script text-2xl text-gold-gradient">Chris Vitorino</p>
+        <p className="font-script text-2xl text-gold-gradient">Rosiane Siqueira</p>
         <p className="max-w-sm text-[0.85rem] text-muted-foreground">
           Estética avançada e personalizada em Vitória. Realçando sua beleza com
           saúde e harmonia.
@@ -816,7 +816,7 @@ function Footer() {
           <Instagram className="h-4 w-4" />
         </a>
         <p className="text-[0.64rem] uppercase tracking-[0.25em] text-muted-foreground">
-          © {new Date().getFullYear()} Chris Vitorino · Enfermeira Esteta
+          © {new Date().getFullYear()} Rosiane Siqueira · Enfermeira Esteta
         </p>
       </div>
     </footer>
