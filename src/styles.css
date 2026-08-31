@@ -37,7 +37,6 @@
   --color-whatsapp: var(--whatsapp);
   --color-whatsapp-dark: var(--whatsapp-dark);
   --color-whatsapp-foreground: var(--whatsapp-foreground);
-
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-script: "Parisienne", cursive;
   --font-sans: "Jost", system-ui, sans-serif;
@@ -64,7 +63,6 @@
   --border: oklch(0.87 0.035 350);
   --input: oklch(0.87 0.035 350);
   --ring: oklch(0.31 0.075 205);
-
   --gold: oklch(0.68 0.105 55);
   --gold-soft: oklch(0.87 0.075 45);
   --gold-deep: oklch(0.52 0.095 52);
@@ -72,7 +70,6 @@
   --whatsapp: oklch(0.65 0.155 152);
   --whatsapp-dark: oklch(0.57 0.145 152);
   --whatsapp-foreground: oklch(0.99 0.005 150);
-
   --gradient-gold: linear-gradient(120deg, oklch(0.52 0.095 52) 0%, oklch(0.76 0.11 58) 45%, oklch(0.62 0.095 48) 70%, oklch(0.82 0.075 65) 100%);
   --gradient-veil: linear-gradient(160deg, oklch(0.995 0.006 350) 0%, oklch(0.975 0.025 350) 55%, oklch(0.95 0.045 350) 100%);
   --shadow-silk: 0 1px 2px oklch(0.3 0.04 205 / 7%), 0 30px 60px -35px oklch(0.3 0.06 205 / 32%);
@@ -85,19 +82,11 @@
 @layer base {
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; }
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
-    font-weight: 300;
-    letter-spacing: 0.01em;
-  }
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    font-weight: 400;
-    letter-spacing: -0.01em;
-  }
+  body { background-color: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); font-weight: 300; letter-spacing: 0.01em; }
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.01em; }
 }
+
+#lovable-badge { display: none !important; }
 
 @utility font-display { font-family: var(--font-display); }
 @utility font-script { font-family: var(--font-script); }
@@ -110,7 +99,6 @@
 @utility rule-gold { height: 1px; background-image: linear-gradient(to right, transparent, var(--gold), transparent); }
 @utility eyebrow { font-size: 0.72rem; letter-spacing: 0.38em; text-transform: uppercase; color: var(--gold-deep); }
 @utility reveal { opacity: 0; transform: translateY(24px); animation: reveal-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-
 @keyframes reveal-up { to { opacity: 1; transform: translateY(0); } }
 @keyframes float-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
 @utility float-slow { animation: float-slow 7s ease-in-out infinite; }
@@ -118,32 +106,10 @@
 .marquee-track { animation-name: marquee-x; animation-timing-function: linear; animation-iteration-count: infinite; will-change: transform; }
 .group:hover .marquee-track { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
-
-@utility card-lux {
-  position: relative;
-  border-radius: 1.25rem;
-  border: 1px solid color-mix(in oklab, var(--gold) 28%, transparent);
-  background-color: var(--card);
-  box-shadow: var(--shadow-silk);
-  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.5s cubic-bezier(0.16,1,0.3,1), border-color 0.5s ease;
-  &:hover { transform: translateY(-6px); border-color: color-mix(in oklab, var(--gold) 62%, transparent); box-shadow: var(--shadow-lift); }
-}
-@utility gold-cap {
-  &::before { content:""; position:absolute; inset:0 auto auto 0; height:2px; width:100%; border-radius:999px; background-image:var(--gradient-gold); opacity:.55; }
-}
-@utility bg-marble {
-  background-image: linear-gradient(to bottom, color-mix(in oklab,var(--background) 82%,transparent), color-mix(in oklab,var(--background) 70%,transparent)), var(--marble-url);
-  background-size: cover; background-position: center;
-}
-@utility bg-marble-soft { background-color: var(--sand); }
-@utility bg-brand-band { background-image: var(--gradient-brand); }
-@utility divider-ornament {
-  display:flex; align-items:center; justify-content:center; gap:.75rem;
-  &::before,&::after { content:""; height:1px; width:3.5rem; background-image:linear-gradient(to right,transparent,var(--gold)); }
-  &::after { background-image:linear-gradient(to left,transparent,var(--gold)); }
-}
-#lovable-badge { display:none !important; }
-@utility gold-frame {
-  position:relative;
-  &::after { content:""; position:absolute; inset:.55rem; border:1px solid color-mix(in oklab,var(--gold) 45%,transparent); border-radius:inherit; pointer-events:none; }
-}
+@utility card-lux { position: relative; border-radius: 1.25rem; border: 1px solid color-mix(in oklab, var(--gold) 28%, transparent); background-color: var(--card); box-shadow: var(--shadow-silk); transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1), border-color .5s ease; &:hover { transform: translateY(-6px); border-color: color-mix(in oklab, var(--gold) 62%, transparent); box-shadow: var(--shadow-lift); } }
+@utility gold-cap { &::before { content:""; position:absolute; inset:0 auto auto 0; height:2px; width:100%; border-radius:999px; background-image:var(--gradient-gold); opacity:.55; } }
+@utility bg-marble { background-image: linear-gradient(to bottom, color-mix(in oklab,var(--background) 82%,transparent), color-mix(in oklab,var(--background) 70%,transparent)), var(--marble-url); background-size:cover; background-position:center; }
+@utility bg-marble-soft { background-color:var(--sand); }
+@utility bg-brand-band { background-image:var(--gradient-brand); }
+@utility divider-ornament { display:flex; align-items:center; justify-content:center; gap:.75rem; &::before,&::after { content:""; height:1px; width:3.5rem; background-image:linear-gradient(to right,transparent,var(--gold)); } &::after { background-image:linear-gradient(to left,transparent,var(--gold)); } }
+@utility gold-frame { position:relative; &::after { content:""; position:absolute; inset:.55rem; border:1px solid color-mix(in oklab,var(--gold) 45%,transparent); border-radius:inherit; pointer-events:none; } }
