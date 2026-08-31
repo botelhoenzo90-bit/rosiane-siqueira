@@ -9,13 +9,13 @@
 #topo img{display:none!important}
 #topo h1{font-size:0}#topo h1::after{content:"Rosiane Siqueira";font-family:var(--font-display);font-size:2.35rem;line-height:1.05;color:var(--foreground)}#topo .eyebrow{font-size:0}#topo .eyebrow::after{content:"Especialista em Criolipólise";font-size:.72rem;letter-spacing:.28em;color:var(--gold-deep)}
 @media(min-width:640px){#topo h1::after{font-size:3.75rem}}
-/* Azul-petróleo é a identidade principal; rosé aparece somente como detalhe */
-.bg-rose-50,.bg-rose-100,.bg-pink-50,.bg-pink-100{background-color:color-mix(in oklab,var(--primary) 7%,white)!important}
-.bg-rose-200,.bg-pink-200{background-color:color-mix(in oklab,var(--primary) 13%,white)!important}
-.text-rose-500,.text-rose-600,.text-rose-700,.text-pink-500,.text-pink-600,.text-pink-700{color:var(--primary)!important}
-.border-rose-200,.border-rose-300,.border-pink-200,.border-pink-300{border-color:color-mix(in oklab,var(--primary) 24%,transparent)!important}
-.from-rose-50,.from-pink-50{--tw-gradient-from:color-mix(in oklab,var(--primary) 7%,white) var(--tw-gradient-from-position)!important}
-.to-rose-50,.to-pink-50{--tw-gradient-to:color-mix(in oklab,var(--primary) 3%,white) var(--tw-gradient-to-position)!important}
+/* Azul-petróleo é a identidade principal; bronze nos detalhes e rosé em pequenos toques */
+.bg-rose-50,.bg-rose-100,.bg-pink-50,.bg-pink-100{background-color:color-mix(in oklab,var(--accent) 45%,white)!important}
+.bg-rose-200,.bg-pink-200{background-color:color-mix(in oklab,var(--accent) 70%,white)!important}
+.text-rose-500,.text-rose-600,.text-rose-700,.text-pink-500,.text-pink-600,.text-pink-700{color:oklch(.52 .085 18)!important}
+.border-rose-200,.border-rose-300,.border-pink-200,.border-pink-300{border-color:color-mix(in oklab,var(--accent) 60%,transparent)!important}
+.from-rose-50,.from-pink-50{--tw-gradient-from:color-mix(in oklab,var(--accent) 40%,white) var(--tw-gradient-from-position)!important}
+.to-rose-50,.to-pink-50{--tw-gradient-to:color-mix(in oklab,var(--accent) 18%,white) var(--tw-gradient-to-position)!important}
 /* Corrige as imagens dos cards de serviços mesmo quando o conteúdo antigo usa slugs diferentes. */
 #servicos .marquee-track > div > div:nth-child(1) img{content:url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1400&auto=format&fit=crop")}
 #servicos .marquee-track > div > div:nth-child(2) img{content:url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1400&auto=format&fit=crop")}
