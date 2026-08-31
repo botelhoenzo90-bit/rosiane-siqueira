@@ -17,6 +17,8 @@ export const benefits = [
   "Cuidado com conforto e segurança",
   "Estética com naturalidade e equilíbrio",
   "Um momento de autocuidado na sua rotina",
+  "Estratégias personalizadas para seus objetivos",
+  "Acompanhamento para orientar cada etapa do cuidado",
 ];
 
 export const howItWorks = [
