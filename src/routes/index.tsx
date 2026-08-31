@@ -26,7 +26,7 @@ import { Marquee } from "@/components/marquee";
 import { WhatsAppButton, WhatsAppIcon } from "@/components/whatsapp-button";
 import logo from "@/assets/logo-chris.png.asset.json";
 import sharingLogo from "@/assets/logo-sharing.png.asset.json";
-import retrato from "@/assets/chris-vitorino.png.asset.json";
+import retrato from "@/assets/rosiane-retrato.jpg";
 import tricologiaImg from "@/assets/servicos/shiatsu.jpg.asset.json";
 import esteticaImg from "@/assets/servicos/terapeutica.jpg.asset.json";
 import regenerativaImg from "@/assets/servicos/ventosas.jpg.asset.json";
