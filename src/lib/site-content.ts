@@ -1,146 +1,146 @@
 export const WHATSAPP_URL =
-  "https://wa.me/5527981046436?text=Olá%20Chris!%20Gostaria%20de%20agendar%20uma%20avaliação.";
+  "https://wa.me/5527981046436?text=Olá%20Rosiane!%20Gostaria%20de%20agendar%20uma%20avaliação.";
 
-export const INSTAGRAM_URL = "https://instagram.com/chrisvitorino.estetica";
+export const INSTAGRAM_URL = "https://instagram.com/rosianesiqueira";
 
 export const services = [
   {
-    slug: "tricologia",
-    name: "Tricologia Capilar",
-    text: "Cuidados especializados para a saúde do couro cabeludo e dos cabelos, com avaliação individualizada e protocolos personalizados para fortalecer os fios e promover saúde.",
+    slug: "criolipolise",
+    name: "Criolipólise",
+    text: "Protocolo corporal personalizado com avaliação individual para definir a melhor estratégia de cuidado de acordo com seus objetivos.",
     duration: "Avaliação Personalizada",
   },
   {
-    slug: "estetica-personalizada",
-    name: "Estética Avançada",
-    text: "Protocolos individuais unindo técnicas avançadas e cuidado para resultados naturais, harmônicos e personalizados às suas necessidades.",
+    slug: "massagem",
+    name: "Massagem",
+    text: "Momentos de cuidado e bem-estar com técnicas selecionadas de acordo com a necessidade e preferência de cada cliente.",
     duration: "Sessão Personalizada",
   },
   {
-    slug: "regenerativa",
-    name: "Estética Regenerativa",
-    text: "Tratamentos voltados à regeneração e revitalização da pele, buscando melhorar sua qualidade, textura, firmeza e aparência de forma progressiva.",
-    duration: "Sessão Regenerativa",
+    slug: "limpeza-de-pele",
+    name: "Limpeza de Pele",
+    text: "Cuidado facial para promover limpeza, renovação e uma aparência mais saudável, sempre respeitando as características da sua pele.",
+    duration: "Sessão Facial",
   },
   {
-    slug: "harmonizacao",
-    name: "Harmonização",
-    text: "Procedimentos personalizados para realçar sua beleza natural e promover equilíbrio e proporção, respeitando suas características individuais.",
-    duration: "Protocolo Exclusivo",
+    slug: "depilacao-tape",
+    name: "Depilação Tape",
+    text: "Técnica de depilação com atenção ao conforto, acabamento e cuidado da pele durante o procedimento.",
+    duration: "Procedimento Personalizado",
   },
   {
-    slug: "peim",
-    name: "Microvarizes — PEIM",
-    text: "Tratamento estético de microvasos aparentes por meio do Procedimento Estético Injetável para Microvasos, para uma pele mais uniforme.",
-    duration: "Avaliação Clínica",
+    slug: "quick-massage",
+    name: "Quick Massage",
+    text: "Uma pausa prática para aliviar a sensação de tensão e proporcionar um momento de relaxamento durante a rotina.",
+    duration: "Sessão Rápida",
   },
   {
-    slug: "home-care",
-    name: "Home Care",
-    text: "Cuidados personalizados para potencializar os resultados clínicos. Orientação individualizada de produtos e rotinas para sua pele e cabelos.",
-    duration: "Consultoria Inclusa",
+    slug: "cuidados-personalizados",
+    name: "Cuidados Personalizados",
+    text: "Atendimento pensado para você, combinando serviços e orientações de acordo com suas necessidades e objetivos estéticos.",
+    duration: "Avaliação Individual",
   },
 ];
 
 export const benefits = [
-  "Resultados naturais e harmônicos",
-  "Protocolos clínicos exclusivos",
-  "Saúde capilar regenerada",
-  "Pele rejuvenescida e firme",
-  "Equilíbrio estético e facial",
-  "Acompanhamento personalizado",
+  "Atendimento acolhedor e personalizado",
+  "Protocolos pensados para cada cliente",
+  "Cuidado com conforto e segurança",
+  "Estética com naturalidade e equilíbrio",
+  "Momento de autocuidado na sua rotina",
+  "Avaliação individual antes do protocolo",
 ];
 
 export const howItWorks = [
   {
     step: "01",
-    title: "Avaliação Clínica",
-    text: "O primeiro passo é entender suas queixas e analisar clinicamente sua pele ou couro cabeludo para traçar o melhor plano.",
+    title: "Avaliação Inicial",
+    text: "Conversamos sobre suas necessidades, objetivos e expectativas para entender qual cuidado faz mais sentido para você.",
   },
   {
     step: "02",
-    title: "Plano Individualizado",
-    text: "Com base na avaliação, elaboro um protocolo único, combinando as melhores técnicas para atingir seus objetivos de forma segura.",
+    title: "Plano Personalizado",
+    text: "Definimos o protocolo de acordo com suas características e com o objetivo que você deseja alcançar.",
   },
   {
     step: "03",
-    title: "Procedimento",
-    text: "Execução cuidadosa do tratamento em ambiente clínico equipado, seguindo rigorosos padrões de saúde e excelência estética.",
+    title: "Momento de Cuidado",
+    text: "Realizamos o procedimento com atenção aos detalhes, conforto e uma experiência acolhedora do início ao fim.",
   },
   {
     step: "04",
-    title: "Pós e Home Care",
-    text: "Orientações detalhadas para o pós-procedimento e prescrição de cuidados em casa para prolongar e otimizar os resultados.",
+    title: "Acompanhamento",
+    text: "Você recebe orientações e pode acompanhar sua evolução, ajustando os cuidados quando necessário.",
   },
 ];
 
 export const aboutPillars = [
   {
-    title: "Formação Técnica",
-    text: "Expertise de enfermagem aplicada à estética com foco em segurança e resultados.",
+    title: "Atendimento Humanizado",
+    text: "Cada atendimento começa ouvindo você e entendendo o que realmente procura.",
   },
   {
-    title: "Beleza Natural",
-    text: "Busca constante pela harmonia, realçando o que você já tem de melhor.",
+    title: "Cuidado Personalizado",
+    text: "Nada de protocolos iguais para todo mundo: o cuidado é pensado para cada cliente.",
   },
   {
-    title: "Biossegurança",
-    text: "Ambiente clínico rigoroso e protocolos seguros para sua total tranquilidade.",
+    title: "Bem-estar",
+    text: "Um espaço para cuidar da aparência sem deixar de lado conforto, acolhimento e autoestima.",
   },
 ];
 
 export const faqs = [
   {
-    q: "O que é a estética regenerativa?",
-    a: "É um conjunto de tratamentos que estimulam o próprio corpo a produzir colágeno e regenerar tecidos, resultando em rejuvenescimento natural.",
+    q: "Como sei qual procedimento é ideal para mim?",
+    a: "O primeiro passo é uma avaliação para entender suas necessidades e objetivos. A partir disso, conversamos sobre as opções mais adequadas para o seu caso.",
   },
   {
-    q: "A harmonização facial dói?",
-    a: "Utilizamos anestésicos locais para minimizar qualquer desconforto, tornando o procedimento muito tranquilo para o paciente.",
+    q: "A criolipólise é indicada para todo mundo?",
+    a: "A indicação depende de uma avaliação individual. O procedimento não substitui hábitos saudáveis e deve ser realizado somente quando houver indicação adequada.",
   },
   {
-    q: "Quantas sessões de PEIM são necessárias?",
-    a: "Varia conforme a quantidade de microvasos, mas geralmente são indicadas de 3 a 5 sessões para um resultado satisfatório.",
+    q: "Preciso fazer avaliação antes de agendar?",
+    a: "Para alguns protocolos, a avaliação é importante para definir o atendimento mais adequado. Entre em contato para saber como funciona para o procedimento que você deseja.",
   },
   {
-    q: "A tricologia ajuda na queda de cabelo?",
-    a: "Sim, através de exames e protocolos específicos conseguimos tratar diversas causas de queda e fortalecer o crescimento capilar.",
+    q: "Vocês trabalham com limpeza de pele?",
+    a: "Sim. A limpeza de pele faz parte dos serviços oferecidos e é realizada de forma personalizada de acordo com as características e necessidades da pele.",
   },
   {
-    q: "Como faço para agendar minha avaliação?",
-    a: "Basta clicar no botão de WhatsApp e agendar um horário para sua consulta inicial de avaliação.",
+    q: "Como faço para agendar?",
+    a: "Clique no botão de WhatsApp e fale diretamente com a Rosiane para consultar horários e escolher seu atendimento.",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Ana Cláudia R.",
-    role: "Pele Regenerada",
+    name: "Cliente satisfeita",
+    role: "Atendimento personalizado",
     rating: 5,
-    text: "A Chris é uma profissional incrível. Minha pele mudou completamente após o protocolo regenerativo. Naturalidade acima de tudo!",
+    text: "Um atendimento muito acolhedor e cuidadoso. Me senti confortável durante todo o procedimento.",
   },
   {
-    name: "Marcos V.",
-    role: "Tricologia",
+    name: "Cliente satisfeita",
+    role: "Cuidados corporais",
     rating: 5,
-    text: "Estava perdendo muito cabelo e o tratamento de tricologia da Chris salvou meus fios. Profissional muito atenciosa e técnica.",
+    text: "Gostei muito da atenção aos detalhes e de como tudo foi explicado antes do atendimento.",
   },
   {
-    name: "Fernanda L.",
-    role: "Harmonização",
+    name: "Cliente satisfeita",
+    role: "Limpeza de pele",
     rating: 5,
-    text: "Fiz harmonização facial e amei o resultado. O medo de ficar artificial sumiu logo na primeira conversa. Ficou perfeito!",
+    text: "Experiência muito agradável. O atendimento foi personalizado e me senti muito bem cuidada.",
   },
   {
-    name: "Juliana G.",
-    role: "Home Care",
+    name: "Cliente satisfeita",
+    role: "Massagem",
     rating: 5,
-    text: "A rotina de produtos que a Chris passou para eu usar em casa potencializou demais o peeling que fizemos na clínica.",
+    text: "Foi um momento de autocuidado que fez muita diferença na minha rotina. Atendimento excelente.",
   },
   {
-    name: "Patrícia M.",
-    role: "PEIM",
+    name: "Cliente satisfeita",
+    role: "Estética",
     rating: 5,
-    text: "O tratamento de microvasos foi super eficaz. Chris tem uma mão muito leve, quase não senti nada durante as aplicações.",
+    text: "Profissional atenciosa e ambiente acolhedor. Com certeza voltarei para outros cuidados.",
   },
 ];
