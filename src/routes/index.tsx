@@ -24,7 +24,6 @@ import {
 import { Reveal } from "@/components/reveal";
 import { Marquee } from "@/components/marquee";
 import { WhatsAppButton, WhatsAppIcon } from "@/components/whatsapp-button";
-import logo from "@/assets/logo-chris.png.asset.json";
 import sharingLogo from "@/assets/logo-sharing.png.asset.json";
 import retrato from "@/assets/rosiane-retrato.jpg";
 import tricologiaImg from "@/assets/servicos/shiatsu.jpg.asset.json";
@@ -168,13 +167,6 @@ function Hero() {
   return (
     <section id="topo" className="relative overflow-hidden bg-background">
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-5 pb-14 pt-0 text-center sm:pb-20">
-        <img
-          src={logo.url}
-          alt="Logomarca Rosiane Siqueira"
-          width={300}
-          height={300}
-          className="h-28 w-28 object-contain sm:h-40 sm:w-40"
-        />
         <h1 className="mt-4 font-display text-[2.35rem] leading-[1.05] sm:text-6xl">
           Rosiane Siqueira
         </h1>
@@ -698,15 +690,6 @@ function Location() {
             <div className="grid items-stretch lg:grid-cols-2">
               <div className="flex flex-col gap-5 p-6 sm:p-8">
                 <div className="flex items-center gap-3.5">
-                  <img
-                    src={logo.url}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    width={80}
-                    height={80}
-                    className="h-12 w-12 shrink-0 object-contain"
-                  />
                   <div className="min-w-0 text-left">
                     <p className="font-display text-xl leading-tight">
                       Rosiane Siqueira Estética Avançada
@@ -794,14 +777,6 @@ function Faq() {
       </Reveal>
       <Reveal delay={160} className="mt-7 flex flex-col items-center gap-6">
         <WhatsAppButton size="lg">Tirar minha dúvida</WhatsAppButton>
-        <img
-          src={logo.url}
-          alt="Logomarca Rosiane Siqueira"
-          loading="lazy"
-          width={160}
-          height={160}
-          className="h-24 w-24 object-contain"
-        />
       </Reveal>
     </section>
   );
