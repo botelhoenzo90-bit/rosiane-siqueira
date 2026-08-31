@@ -2,12 +2,12 @@ export const WHATSAPP_URL = "https://wa.me/5527981046436?text=Olá%20Rosiane!%20
 export const INSTAGRAM_URL = "https://instagram.com/rosianesiqueira";
 
 export const services = [
-  { slug: "criolipolise", name: "Criolipólise", text: "Protocolo corporal personalizado com avaliação individual para definir a melhor estratégia de cuidado de acordo com seus objetivos.", duration: "Avaliação Personalizada" },
-  { slug: "massagem", name: "Massagem", text: "Técnicas selecionadas de acordo com a necessidade e preferência de cada cliente, em uma experiência acolhedora de bem-estar.", duration: "Sessão Personalizada" },
-  { slug: "limpeza-de-pele", name: "Limpeza de Pele", text: "Cuidado facial personalizado para promover limpeza, renovação e uma aparência mais saudável, respeitando as características da sua pele.", duration: "Sessão Facial" },
-  { slug: "depilacao-tape", name: "Depilação Tape", text: "Técnica de depilação com atenção ao conforto, acabamento e cuidado da pele durante o procedimento.", duration: "Procedimento Personalizado" },
-  { slug: "quick-massage", name: "Quick Massage", text: "Uma pausa prática para aliviar a sensação de tensão e proporcionar um momento de relaxamento durante a rotina.", duration: "Sessão Rápida" },
-  { slug: "cuidados-personalizados", name: "Cuidados Personalizados", text: "Atendimento pensado para você, combinando serviços e orientações de acordo com suas necessidades e objetivos estéticos.", duration: "Avaliação Individual" },
+  { slug: "peim", name: "Criolipólise", text: "Protocolo corporal personalizado com avaliação individual para definir a melhor estratégia de cuidado de acordo com seus objetivos.", duration: "Avaliação Personalizada" },
+  { slug: "home-care", name: "Massagem", text: "Técnicas selecionadas de acordo com a necessidade e preferência de cada cliente, em uma experiência acolhedora de bem-estar.", duration: "Sessão Personalizada" },
+  { slug: "estetica-personalizada", name: "Limpeza de Pele", text: "Cuidado facial personalizado para promover limpeza, renovação e uma aparência mais saudável, respeitando as características da sua pele.", duration: "Sessão Facial" },
+  { slug: "tricologia", name: "Depilação Tape", text: "Técnica de depilação com atenção ao conforto, acabamento e cuidado da pele durante o procedimento.", duration: "Procedimento Personalizado" },
+  { slug: "regenerativa", name: "Quick Massage", text: "Uma pausa prática para aliviar a sensação de tensão e proporcionar um momento de relaxamento durante a rotina.", duration: "Sessão Rápida" },
+  { slug: "harmonizacao", name: "Cuidados Personalizados", text: "Atendimento pensado para você, combinando serviços e orientações de acordo com suas necessidades e objetivos estéticos.", duration: "Avaliação Individual" },
 ];
 
 export const benefits = [
