@@ -82,7 +82,7 @@ export const Route = createFileRoute("/")({
           "@type": "HealthAndBeautyBusiness",
           name: "Rosiane Siqueira — Enfermeira Esteta",
           description,
-          image: retrato.url,
+          image: retrato,
           address: {
             "@type": "PostalAddress",
             addressCountry: "BR",
@@ -407,11 +407,11 @@ function About() {
           <Reveal className="relative mx-auto w-full max-w-[19rem]">
             <div className="absolute -inset-2.5 rounded-3xl border border-gold/40" />
             <img
-              src={retrato.url}
+              src={retrato}
               alt="Rosiane Siqueira, Enfermeira Esteta"
               loading="lazy"
-              width={905}
-              height={1358}
+              width={1024}
+              height={1024}
               className="relative aspect-square w-full rounded-2xl object-cover shadow-lift"
             />
           </Reveal>
