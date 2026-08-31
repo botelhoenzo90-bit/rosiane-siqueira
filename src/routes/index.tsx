@@ -183,7 +183,15 @@ function Hero() {
         <p className="mt-4 max-w-lg text-[1.02rem] leading-relaxed text-muted-foreground">
           Realce sua beleza natural com protocolos exclusivos de estética avançada e capilar. Agende sua avaliação personalizada e sinta a diferença.
         </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-2.5">
+        <div className="mt-7 w-full max-w-md overflow-hidden rounded-3xl shadow-lift">
+          <img
+            src="https://images.unsplash.com/photo-1552693673-1bf958298935?q=85&w=1200&auto=format&fit=crop"
+            alt="Atendimento estético em ambiente clínico"
+            loading="lazy"
+            className="h-52 w-full object-cover sm:h-60"
+          />
+        </div>
+        <div className="mt-7 flex flex-wrap justify-center gap-2.5">
           <WhatsAppButton size="xl">Agendar avaliação</WhatsAppButton>
           <a
             href="#como-funciona"
